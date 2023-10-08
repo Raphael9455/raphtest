@@ -3,3 +3,5 @@ import random
 mystere = random.randint(0,100)
 value = -1
 vies = 7
+
+while(mystere != value and vies != 0):

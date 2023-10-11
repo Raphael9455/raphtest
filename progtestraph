@@ -6,3 +6,4 @@ vies = 7
 
 while(mystere != value and vies != 0):
     value = int(input("Quel est votre nombre ?\n"))
+    vies = vies - 1

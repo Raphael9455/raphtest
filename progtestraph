@@ -8,3 +8,6 @@ while(mystere != value and vies != 0):
     value = int(input("Quel est votre nombre ?\n"))
     vies = vies - 1
     vies = 6
+
+while(vies != value and value != 0):
+    rand = random.randint(0,100)

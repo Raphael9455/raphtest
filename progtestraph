@@ -11,3 +11,5 @@ while(mystere != value and vies != 0):
 
 while(vies != value and value != 0):
     rand = random.randint(0,100)
+    print("Cest gagné !\n")
+    rand = 0

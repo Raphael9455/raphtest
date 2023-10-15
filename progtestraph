@@ -13,3 +13,8 @@ while(vies != value and value != 0):
     rand = random.randint(0,100)
     print("Cest gagné !\n")
     rand = 0
+
+vies = 1000
+
+Message = "mort"
+

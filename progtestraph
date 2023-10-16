@@ -18,3 +18,7 @@ vies = 1000
 
 Message = "mort"
 
+if(Message = "mort"):
+     Break
+
+

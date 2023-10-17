@@ -3,6 +3,7 @@ import random
 mystere = random.randint(0,100)
 value = -1
 vies = 7
+mort = 0
 
 while(mystere != value and vies != 0):
     value = int(input("Quel est votre nombre ?\n"))
@@ -19,6 +20,9 @@ vies = 1000
 Message = "mort"
 
 if(Message = "mort"):
-     Break
+
+    print("Game OVer")
+    mort = mort + 1
+    Break
 
 

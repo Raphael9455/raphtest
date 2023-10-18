@@ -25,4 +25,6 @@ if(Message = "mort"):
     mort = mort + 1
     Break
 
+Message = "vivant"
+
 

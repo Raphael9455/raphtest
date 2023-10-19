@@ -28,3 +28,9 @@ if(Message = "mort"):
 Message = "vivant"
 
 
+if(Message = "vivant"):
+
+    print("Gagne")
+    Break
+
+

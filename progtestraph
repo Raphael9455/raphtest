@@ -25,6 +25,8 @@ if(Message = "mort"):
     mort = mort + 1
     Break
 
+Message = "vivant"
+
 if(Message = "vivant"):
 
     print("Gagne")

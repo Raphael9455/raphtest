@@ -15,8 +15,6 @@ while(vies != value and value != 0):
     print("Cest gagné !\n")
     rand = 0
 
-vies = 10
-
 Message = "mort"
 
 if(Message = "mort"):
@@ -31,5 +29,6 @@ if(Message = "vivant"):
 
     print("Gagne")
     print("Go back now")
+    message = "mort"
 
 

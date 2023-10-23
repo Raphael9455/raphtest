@@ -29,6 +29,10 @@ if(Message = "vivant"):
 
     print("Gagne")
     print("Go back now")
-    message = "mort"
 
+message = "mort"
+
+if(Message = "mort"):
+    print("Perdu")
+    print("Go back now")
 

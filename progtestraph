@@ -22,10 +22,6 @@ if(Message = "vivant"):
     print("Gagne")
     print("Go back now")
 
-message = "mort"
-
-if(Message = "mort"):
-    print("Perdu")
-    print("Go back now")
-    break
-
+main_order = False
+stoploss_order = False
+takeprofit_order = False

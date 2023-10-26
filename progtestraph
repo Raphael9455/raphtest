@@ -1,7 +1,7 @@
 import random
 
 mystere = random.randint(0,100)
-value = -4
+value = 1
 vies = 10
 mort = 0
 
@@ -25,3 +25,6 @@ if(Message = "vivant"):
 main_order = False
 stoploss_order = False
 takeprofit_order = False
+
+position_opening_next_candle_time = False
+position_opening_next_candle_is_open = False

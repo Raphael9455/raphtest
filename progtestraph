@@ -1,4 +1,6 @@
 import random
+import pandas
+import time
 
 mystere = random.randint(0,100)
 value = 1
@@ -14,13 +16,6 @@ while(vies != value and value != 0):
     rand = random.randint(0,100)
     print("Cest gagné !\n")
     rand = 0
-
-Message = "vivant"
-
-if(Message = "vivant"):
-
-    print("Gagne")
-    print("Go back now")
 
 main_order = False
 stoploss_order = False

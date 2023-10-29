@@ -4,13 +4,13 @@ import time
 
 mystere = random.randint(0,100)
 value = 1
-vies = 10
+vies = 100
 mort = 0
 
 while(mystere != value and vies != 0):
     value = int(input("Quel est votre nombre ?\n"))
     vies = vies - 1
-    vies = 6
+    vies = 10
 
 while(vies != value and value != 0):
     rand = random.randint(0,100)
@@ -26,3 +26,5 @@ position_opening_next_candle_is_open = False
 
 stoploss_level_1 = False
 stoploss_level_2 = True
+
+takeprofit_level = 5

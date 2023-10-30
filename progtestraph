@@ -18,7 +18,7 @@ while(vies != value and value != 0):
     rand = 0
 
 main_order = False
-stoploss_order = False
+stoploss_order = True
 takeprofit_order = False
 
 position_opening_next_candle_time = False
@@ -27,4 +27,7 @@ position_opening_next_candle_is_open = False
 stoploss_level_1 = False
 stoploss_level_2 = True
 
-takeprofit_level = 5
+takeprofit_level = 50
+
+buy_level_min = 10
+buy_level_max = buy_level_min + (3/100) * buy_level_min

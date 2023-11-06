@@ -14,7 +14,6 @@ while(mystere != value and vies != 0):
 while(vies != value and value != 0):
     rand = random.randint(0,100)
     print("Cest gagné !\n")
-    rand = 10
 
 main_order = False
 stoploss_order = True
@@ -28,10 +27,10 @@ stoploss_level_2 = True
 
 takeprofit_level = 10000
 
-buy_level_min = 60000
+buy_level_min = 60049
 buy_level_max = buy_level_min + (3/100) * buy_level_min
 
-sell_level_min = 75000
+sell_level_min = 75055
 sell_level_max = sell_level_min - (3/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")

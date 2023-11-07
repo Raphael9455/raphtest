@@ -43,3 +43,4 @@ while (bot_in_action == True) :
 
         unix_timestamp_for_21 = int(time.time())-(21*5*60)
         response_kline = session.query_kline(symbol="BTCUSDT", interval="10", from_time=unix_timestamp_for_21)["result"]
+        pandas_response_kline = pandas.DataFrame(response_kline)

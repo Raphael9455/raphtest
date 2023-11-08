@@ -4,12 +4,12 @@ import time
 
 mystere = random.randint(0,100)
 value = 10
-vies = 100
-mort = 2
+vies = 10010
+mort = 200
 
 while(mystere != value and vies != 0):
     value = int(input("Quel est votre nombre ?\n"))
-    vies = vies - 1
+    vies = vies - 4
 
 while(vies != value and value != 0):
     rand = random.randint(0,100)
@@ -25,7 +25,7 @@ position_opening_next_candle_is_open = False
 stoploss_level_1 = False
 stoploss_level_2 = True
 
-takeprofit_level = 10000
+takeprofit_level = 10446
 
 buy_level_min = 60049
 buy_level_max = buy_level_min + (3/100) * buy_level_min

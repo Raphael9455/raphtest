@@ -50,3 +50,4 @@ while (bot_in_action == True) :
         pandas_response_kline_close = pandas_response_kline["close"]
         pandas_response_kline_high = pandas_response_kline["high"]
         pandas_response_kline_low = pandas_response_kline["low"]
+        pandas_response_kline_open_time = pandas_response_kline["open_time"]

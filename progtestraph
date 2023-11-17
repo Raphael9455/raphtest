@@ -32,10 +32,10 @@ stoploss_level_2 = True
 takeprofit_level = 10499
 
 buy_level_min = 61950
-buy_level_max = buy_level_min + (3/100) * buy_level_min
+buy_level_max = buy_level_min + (3.85/100) * buy_level_min
 
 sell_level_min = 99888
-sell_level_max = sell_level_min - (3/100) * sell_level_min
+sell_level_max = sell_level_min - (3.86/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
 
@@ -43,8 +43,8 @@ while (bot_in_action == True) :
 
     try :
 
-        unix_timestamp_for_21 = int(time.time())-(21*5*60)
-        response_kline = session.query_kline(symbol="BTCUSDT", interval="10", from_time=unix_timestamp_for_21)["result"]
+        unix_timestamp_for_100 = int(time.time())-(100*5*60)
+        response_kline = session.query_kline(symbol="BTCUSDT", interval="25", from_time=unix_timestamp_for_21)["result"]
         pandas_response_kline = pandas.DataFrame(response_kline)
 
         pandas_response_kline_close = pandas_response_kline["close"]

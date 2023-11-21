@@ -9,10 +9,10 @@ mort = 20
 
 while(mystere != value and vies != 0):
     value = int(input("Quel est votre nombre ?\n"))
-    vies = vies - 4
+    vies = vies - 5
 
 while(vies != value and value != 0):
-    rand = random.randint(0,1000)
+    rand = random.randint(0,100)
     print("Cest gagné !\n")
 
 bot_in_action = False
@@ -21,7 +21,7 @@ startup_info = True
 
 main_order = True
 stoploss_order = False
-takeprofit_order = True
+takeprofit_order = False
 
 position_opening_next_candle_time = False
 position_opening_next_candle_is_open = True
@@ -29,12 +29,12 @@ position_opening_next_candle_is_open = True
 stoploss_level_1 = True
 stoploss_level_2 = True
 
-takeprofit_level = 12500
+takeprofit_level = 15000
 
-buy_level_min = 22125
+buy_level_min = 22000
 buy_level_max = buy_level_min + (3.85/100) * buy_level_min
 
-sell_level_min = 56150
+sell_level_min = 54000
 sell_level_max = sell_level_min - (3.86/100) * sell_level_min
 
 print(f"\nDémarrage du robot BTC ({time.strftime('%X')})\n")
@@ -43,7 +43,7 @@ while (bot_in_action == True) :
 
     try :
 
-        unix_timestamp_for_100 = int(time.time())-(100*5*60)
+        unix_timestamp_for_100 = int(time.time())-(44*5*60)
         response_kline = session.query_kline(symbol="BTCUSDT", interval="25", from_time=unix_timestamp_for_21)["result"]
         pandas_response_kline = pandas.DataFrame(response_kline)
 

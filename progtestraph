@@ -3,13 +3,13 @@ import pandas
 import time
 
 mystere = random.randint(0,100)
-value = 10
-vies = 100
-mort = 20
+value = 10500
+vies = 15
+mort = 45
 
 while(mystere != value and vies != 0):
     value = int(input("Quel est votre nombre ?\n"))
-    vies = vies - 5
+    vies = vies - 7
 
 while(vies != value and value != 0):
     rand = random.randint(0,100)
@@ -19,9 +19,9 @@ bot_in_action = False
 was_in_position = True
 startup_info = True
 
-main_order = True
+main_order = Flase
 stoploss_order = False
-takeprofit_order = False
+takeprofit_order = True
 
 position_opening_next_candle_time = False
 position_opening_next_candle_is_open = True
@@ -29,7 +29,7 @@ position_opening_next_candle_is_open = True
 stoploss_level_1 = True
 stoploss_level_2 = True
 
-takeprofit_level = 15000
+takeprofit_level = 15700
 
 buy_level_min = 22000
 buy_level_max = buy_level_min + (3.85/100) * buy_level_min

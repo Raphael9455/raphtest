@@ -54,3 +54,6 @@ while (bot_in_action == True) :
 
         current_candle_high = pandas_response_kline_high[pandas_response_kline_high.count()-1]
         current_candle_low = pandas_response_kline_low[pandas_response_kline_low.count()-1] 
+        current_candle_open_time = pandas_response_kline_open_time[pandas_response_kline_open_time.count()-1]
+
+        pandas_response_kline_close = pandas_response_kline_close.drop(pandas_response_kline_close.count()-1)

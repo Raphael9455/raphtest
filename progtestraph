@@ -57,3 +57,8 @@ while (bot_in_action == True) :
         current_candle_open_time = pandas_response_kline_open_time[pandas_response_kline_open_time.count()-1]
 
         pandas_response_kline_close = pandas_response_kline_close.drop(pandas_response_kline_close.count()-1)
+
+        #Calculation of bollinger up and down
+
+        moving_average = pandas_response_kline_close.mean()
+        standart_deviation = pandas_response_kline_close.std(ddof=0)

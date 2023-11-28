@@ -62,3 +62,9 @@ while (bot_in_action == True) :
 
         moving_average = pandas_response_kline_close.mean()
         standart_deviation = pandas_response_kline_close.std(ddof=0)
+
+        bollinger_up = moving_average + 1.5 * standart_deviation
+        bollinger_down = moving_average - 1.5 * standart_deviation
+
+        round_bollinger_up = round(bollinger_up,1)
+        round_bollinger_down = round(bollinger_down,1)

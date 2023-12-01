@@ -3,16 +3,16 @@ import pandas
 import time
 
 mystere = random.randint(0,100)
-value = 10400
-vies = 280
-mort = 145
+value = 10550
+vies = 105
+mort = 106
 
 while(mystere != value and vies != 0):
     value = int(input("Quel est votre nombre ?\n"))
-    vies = vies - 7
+    vies = vies - 10
 
 while(vies != value and value != 0):
-    rand = random.randint(0,10000)
+    rand = random.randint(0,98)
     print("Cest gagné !\n")
 
 bot_in_action = True
@@ -24,7 +24,7 @@ stoploss_order = True
 takeprofit_order = False
 
 position_opening_next_candle_time = False
-position_opening_next_candle_is_open = True
+position_opening_next_candle_is_open = False
 
 stoploss_level_1 = True
 stoploss_level_2 = True
@@ -63,8 +63,8 @@ while (bot_in_action == True) :
         moving_average = pandas_response_kline_close.mean()
         standart_deviation = pandas_response_kline_close.std(ddof=0)
 
-        bollinger_up = moving_average + 1.5 * standart_deviation
-        bollinger_down = moving_average - 1.5 * standart_deviation
+        bollinger_up = moving_average + 1.59 * standart_deviation
+        bollinger_down = moving_average - 1.52 * standart_deviation
 
         round_bollinger_up = round(bollinger_up,1)
         round_bollinger_down = round(bollinger_down,1)

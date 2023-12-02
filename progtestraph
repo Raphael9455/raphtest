@@ -12,15 +12,15 @@ while(mystere != value and vies != 0):
     vies = vies - 10
 
 while(vies != value and value != 0):
-    rand = random.randint(0,98)
+    rand = random.randint(0,85)
     print("Cest gagné !\n")
 
 bot_in_action = True
 was_in_position = False
 startup_info = True
 
-main_order = True
-stoploss_order = True
+main_order = False
+stoploss_order = False
 takeprofit_order = False
 
 position_opening_next_candle_time = False
@@ -75,3 +75,12 @@ while (bot_in_action == True) :
         response_order = session.query_active_order(symbol="BTCUSDT")["result"]
         response_conditional_order = session.query_conditional_order(symbol="BTCUSDT")["result"]
         order_number = len(response_order) + len(response_conditional_order)
+
+        if(startup_info == False) :
+
+            #Display startup information
+
+            print(f"Risque : {stoploss_value} $")
+            print(f"Effet de levier : {response_position['leverage']}")
+            print(f"Marge isolé : {response_position['is_isolated']}")
+            print(f"Mode (0 = unidirectionnel) : {response_position['position_idx']}\n")

@@ -89,3 +89,17 @@ while (bot_in_action == True) :
             print(f"Niveau de vente minimum : {sell_level_min}\n")
 
             startup_info = True
+
+            if (response_position["size"] == 0) :
+
+                #Management without position
+    
+                if (was_in_position == True) :
+    
+                    print(f"Trade terminé ({time.strftime('%X')})\n")
+                    bot_in_action = False
+        
+                elif(buy_level_max != 0 and bollinger_down > buy_level_max) :
+    
+                    print(f"Niveau d'achat maximum atteint ({time.strftime('%X')})\n")
+                    bot_in_action = False

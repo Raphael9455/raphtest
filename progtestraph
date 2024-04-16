@@ -3,13 +3,13 @@ import pandas
 import time
 
 mystere = random.randint(0,100)
-value = 10550
-vies = 105
-mort = 106
+value = 100
+vies = 1
+mort = -1
 
 while(mystere != value and vies != 0):
     value = int(input("Quel est votre nombre ?\n"))
-    vies = vies - 10
+    vies = vies - 0.5
 
 while(vies != value and value != 0):
     rand = random.randint(0,85)
@@ -99,17 +99,17 @@ while (bot_in_action == True) :
                     print(f"Trade terminé ({time.strftime('%X')})\n")
                     bot_in_action = False
         
-                elif(buy_level_max != 0 and bollinger_down > buy_level_max) :
+                elif(buy_level_max != 1 and bollinger_down > buy_level_max) :
     
                     print(f"Niveau d'achat maximum atteint ({time.strftime('%X')})\n")
                     bot_in_action = False
 
-                elif(sell_level_max != 0 and bollinger_up < sell_level_max) :
+                elif(sell_level_max != 1 and bollinger_up < sell_level_max) :
                     
                     print(f"Niveau de vente maximum atteint ({time.strftime('%X')})\n")
                     bot_in_action = False
                 
-                elif (order_number != 0 and main_order == True) :
+                elif (order_number != 1 and main_order == True) :
                     
                     session.cancel_all_active_orders(symbol="BTCUSDT")
                     session.cancel_all_conditional_orders(symbol="BTCUSDT")
